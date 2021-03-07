@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="backend.js"></script>
+  <script src="https://kit.fontawesome.com/b69b7f3eb2.js" crossorigin="anonymous"></script>
+  <title>Mini projeto 1</title>
+</head>
+
+<body>
+  
+  <a class="nav">MINI PROJETO - BUSCA SVG</a>
+
+  <div class="search-box">
+      
+      <input id="cidade" type="text" class="search-txt" placeholder="Informe uma cidade" required>
+  
+      <button type="submit" class="search-btn" id="botao" onclick="buscaSvgCidade();">
+        <i class="fas fa-search" onclick="buscaSvgCidade();"> </i>
+        Buscar
+      </button>
+  </div> 
+
+
+  <div style="text-align: center;">
+
+    <svg id="svg" width="600px" height="350px" style="border:2px solid black;">
+      <path id="path" fill="none" stroke="blue" stroke-width="0.001" />
+    </svg>
+    <p id="codSvg"></p>
+
+  </div>
+
+</body>
+
+</html>
